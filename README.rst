@@ -142,7 +142,7 @@ Running cat on a particular log file
 -----
 Links
 -----
-- My Blog post describing these steps in more detail: http://KenCochrane.net
+- My Blog post describing these steps in more detail: http://kencochrane.net/blog/2012/01/getting-djangocms-up-and-running-on-stackato/
 - Stackato Client command reference: http://docs.stackato.com/commands.html#command-ref-client
 - stackato.yml reference: http://docs.stackato.com/client.html#configure-stackato-yml
 - Stackato quick start guide: http://docs.stackato.com/quick-start.html
