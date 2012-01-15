@@ -3,7 +3,7 @@ Django CMS on Stackato
 ======================
 
 This git repository helps you get up and running quickly w/ a Django CMS installation
-on ActiveState Stackato.  The Django project name used in this repo is 'mycms'
+on `ActiveState Stackato <http://www.activestate.com/cloud>`_.  The Django project name used in this repo is 'mycms'
 but you can feel free to change it.  Right now the backend is mysql.
 
 -------------------
@@ -24,6 +24,7 @@ There are a few different options, follow the steps outlined here. http://docs.s
 ------------------------------------
 
     $ stackato target api.sandbox.activestate.com
+    
     > Successfully targeted to [https://api.sandbox.activestate.com]
     
 4. Login to stackato
