@@ -30,12 +30,14 @@ There are a few different options, follow the steps outlined here. http://docs.s
 --------------------
 
     $ stackato login
+    
     > Successfully logged into [https://api.sandbox.activestate.com]
     
 5. Download this github repo
 ----------------------------
 
     cd ~/projects
+    
     git clone git://github.com/kencochrane/django-cms-stackato.git
     
 6. Deploy the project to stackato
