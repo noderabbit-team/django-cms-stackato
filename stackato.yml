@@ -1,16 +1,25 @@
-name: myblog
+name: djangocms
+
+mem: 64M
+
+instances: 1
+ 
 framework:
     type: python
     runtime: python27
-processess:
-    web: gunicorn -w 4 -b 0.0.0.0:$VCAP_APP_PORT wsgi:application
-mem: 64M
-instances: 2
-services:
-    mysql: mysqldb
-ignores: ["tmp", ".git"]
+    
+env:
+    DJANGO_SETTINGS_MODULE: mycms.settings
+    PYTHONPATH: /app/app/mycms
+  
 hooks:
-  post-staging:
-    - python mycms/manage.py syncdb --noinput
-    - python mycms/manage.py migrate --noinput
-    - python mycms/manage.py collectstatic --noinput
+    post-staging:
+        - python mycms/manage.py syncdb --noinput
+
+services:
+    mysql: mysql-djangocms
+  
+ignores: 
+    - .git
+    - .pyc
+
